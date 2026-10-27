@@ -1,0 +1,28 @@
+node_modules/
+dist/
+dist-server/
+data/
+.npm-cache/
+*.log
+scripts/roundtrip.ics
+android/build/
+android/res/values/config.xml
+ScheduleCopilot.apk
+*.keystore
+
+# Phone builds and personal exports
+dist-mobile/
+*.apk
+*-backup.json
+.env
+.env.*
+!.env.example
+android/assets/
+*.jks
+*.p12
+# Keep only screenshots generated with synthetic test fixtures.
+docs/*.png
+!docs/app-icon.png
+!docs/liquid-glass-mobile.png
+!docs/liquid-glass-mobile-menu.png
+!docs/week-swipe-continuous.png

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="canvas" x2="1" y2="1"><stop stop-color="#fff7e9"/><stop offset=".55" stop-color="#ffe5ce"/><stop offset="1" stop-color="#f2c7b3"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#fffdf6" stop-opacity=".95"/><stop offset="1" stop-color="#fffdf6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="glass" x2=".8" y2="1"><stop stop-color="#ffffff" stop-opacity=".94"/><stop offset=".58" stop-color="#fffaf0" stop-opacity=".76"/><stop offset="1" stop-color="#fff0df" stop-opacity=".45"/></linearGradient>
+    <linearGradient id="clay" x2="1" y2="1"><stop stop-color="#d59c78"/><stop offset="1" stop-color="#a75d40"/></linearGradient>
+    <linearGradient id="dial" x2="1" y2="1"><stop stop-color="#fffef9"/><stop offset="1" stop-color="#f6dbc2"/></linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#a56c45" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="icon-background">
+    <rect width="512" height="512" rx="112" fill="url(#canvas)"/>
+    <circle cx="125" cy="104" r="275" fill="url(#glow)"/>
+    <rect x="4" y="4" width="504" height="504" rx="109" fill="none" stroke="#fff9f0" stroke-opacity=".75" stroke-width="3"/>
+  </g>
+  <g id="icon-foreground">
+    <g filter="url(#shadow)">
+      <rect x="125" y="140" width="256" height="238" rx="46" fill="url(#glass)" stroke="#fffdfa" stroke-width="4"/>
+      <path d="M129 206H377" stroke="#dbb596" stroke-opacity=".5" stroke-width="3"/>
+      <rect x="181" y="119" width="17" height="52" rx="8.5" fill="url(#clay)"/>
+      <rect x="308" y="119" width="17" height="52" rx="8.5" fill="url(#clay)"/>
+      <rect x="157" y="235" width="46" height="39" rx="12" fill="#e7c6a5"/>
+      <rect x="221" y="235" width="46" height="39" rx="12" fill="#d8ab88"/>
+      <rect x="285" y="235" width="46" height="39" rx="12" fill="#ebceb1"/>
+      <rect x="157" y="292" width="46" height="39" rx="12" fill="#eddbc1"/>
+      <rect x="221" y="292" width="46" height="39" rx="12" fill="#e8c5a2"/>
+    </g>
+    <g filter="url(#shadow)">
+      <circle cx="328" cy="329" r="58" fill="url(#dial)" stroke="#fffdf6" stroke-width="4"/>
+      <circle cx="328" cy="329" r="45" fill="none" stroke="#d2a37f" stroke-opacity=".5" stroke-width="2"/>
+      <path d="M347 297L336 337L309 361L320 321Z" fill="#e8c6aa"/>
+      <path d="M347 297L336 337L320 321Z" fill="url(#clay)"/>
+      <circle cx="328" cy="329" r="4" fill="#fffaf0"/>
+    </g>
+  </g>
+</svg>
